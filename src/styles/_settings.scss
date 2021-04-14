@@ -1,0 +1,134 @@
+
+//............font familly...................................................
+
+@font-face {
+  font-family: 'franckBlack';
+  src: url('./fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'franckBold';
+  src: url('./fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'franckLight';
+  src: url('./fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'franckMedium';
+  src: url('./fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'franckRegular';
+  src: url('./fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+//..............................font size......................................
+
+$fontSizeArray: (
+    for350px: 20rem,        //for font-size 350px
+    for170px: 13.6rem,      //for font-size 170px
+    for160px: 12.8rem,      //for font-size 160px  
+    for150px: 12rem,        //for font-size 150px               
+    for140px: 11.5rem,      //for font-size 140px
+    for90px: 7.2rem,        //for font-size 90px
+    for80px: 6.4rem,        //for font-size 80px
+    for75px: 6rem,          //for font-size 75px
+    for70px: 5.6rem,        //for font-size 70px
+    for65px: 5.2rem,        //for font-size 65px
+    for60px: 4.8rem,        //for font-size 60px
+    for50px: 4rem,          //for font-size 50px
+    for46px: 3.68rem,       //for font-size 46px
+    for35px: 2.8rem,        //for font-size 35px
+    for30px: 2.4rem,        //for font-size 30px
+    for25px: 2rem,          //for font-size 25px
+    for23px: 1.84rem,       //for font-size 23px
+    for20px: 1.6rem,        //for font-size 20px
+    for18px: 1.44rem,       //for font-size 18px
+  );
+
+  //...........................colors......................................
+
+$firstColor: #CDE0F0;
+$secondColor: #4EA6F0;
+$thirdColor: #2D4AEE;
+$black: #051A2C;
+$white: #F7FAFC;
+
+//...................general settings.......................................
+
+$borderRadius: 25px;
+$shadow: 0 1px 3px $black;
+$minHeight: 95vh;
+
+@mixin verticalCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 1rem auto;
+  max-width: 1200px;
+  font-family: 'franckRegular';
+  color: $black;
+}
+
+button{
+  cursor: pointer;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
+}
+
+a:visited{
+  color: $black;
+}
+
+.home, .knowledges, .portfolio, .contact{
+  display: flex;
+
+  @media screen and (max-width: 850px){
+    display: block;
+  }
+}
+
+.homeContent, .knowledgesContent, .portfolioContent, .contactContent{
+  margin-left: .4rem;
+
+  @media screen and (max-width: 850px) {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1260px) {
+  body{
+    margin: 1rem;
+  }
+}
