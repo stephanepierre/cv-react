@@ -7,6 +7,7 @@ import IconCompetence from '../media/images/icons/icon-competences.png';
 import IconPortfolio from '../media/images/icons/icon-portfolio.png';
 import IconLinkedIn from '../media/images/icons/icon-linkedIn.png';
 import IconGithub from '../media/images/icons/icon-github.png';
+import IconExperiencesJobs from '../media/images/icons/experiences-jobs.png';
 
 const Navigation = () => {
   return (
@@ -24,6 +25,13 @@ const Navigation = () => {
             <NavLink exact to="/" activeClassName="active">
               <img src={ IconHome } alt="icon-home" />
               <span>Accueil</span>
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink exact to="/experiences" activeClassName="active">
+              <img src={ IconExperiencesJobs } alt="icon-experiences" />
+              <span>Expériences</span>
             </NavLink>
           </li>
 
