@@ -1,12 +1,12 @@
 import React from 'react';
-import Hand from '../../media/images/hand.jpg';
-import Volley from '../../media/images/volley.jpg';
-import Book from '../../media/images/book.jpg';
-import Film from '../../media/images/film.jpg';
-import Musique from '../../media/images/violon.jpg';
-import Web from '../../media/images/ecranWeb.jpg';
-import Voyage from '../../media/images/voyage.jpg';
-import OtherInterest from '../../media/images/interrogation.jpg';
+import Hand from '../../media/images/icons/icon-hand.png';
+import Volley from '../../media/images/icons/icon-volleyBall.png';
+import Book from '../../media/images/icons/icon-livre.png';
+import Film from '../../media/images/icons/icon-film.png';
+import Musique from '../../media/images/icons/icon-musique.png';
+import Web from '../../media/images/icons/icon-web.png';
+import Voyage from '../../media/images/icons/icon-voyage.png';
+import OtherInterest from '../../media/images/icons/icon-other.png';
 
 
 const Hobbies = () => {
