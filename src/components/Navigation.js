@@ -22,28 +22,28 @@ const Navigation = () => {
         <ul>
           <li>
             <NavLink exact to="/" activeClassName="active">
-                <img src={ IconHome } alt="icon-home" />
+              <img src={ IconHome } alt="icon-home" />
               <span>Accueil</span>
             </NavLink>
           </li>
 
           <li>
             <NavLink exact to="/competences" activeClassName="active">
-                <img src={ IconCompetence } alt="icon-competence" />
+              <img src={ IconCompetence } alt="icon-competence" />
               <span>Compétences</span>
             </NavLink>
           </li>
 
           <li>
             <NavLink exact to="/contact" activeClassName="active">
-                <img src={ IconContact } alt="icon-contact" />
+              <img src={ IconContact } alt="icon-contact" />
               <span>Contact</span>
             </NavLink>
           </li>
 
           <li>
             <NavLink exact to="/portfolio" activeClassName="active">
-                <img src={ IconPortfolio } alt="icon-portfolio" />
+              <img src={ IconPortfolio } alt="icon-portfolio" />
               <span>Portfolio</span>
             </NavLink>
           </li>
