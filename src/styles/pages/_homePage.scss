@@ -1,0 +1,95 @@
+.home{
+  .homeContent{
+    background-image: linear-gradient(115deg, $firstColor 50%, transparent 200%),
+      url("../../media/images/tiger-background.jpg");
+    background-position: center center;
+    min-height: $minHeight;
+    width: 100%;
+    min-height: 500px;
+    border-radius: $borderRadius;
+    position: relative;
+    overflow: hidden;
+
+    .content{
+      position: absolute;
+      top: 20%;
+      left: 13%;
+
+      h1, h2, .pdf > a{
+        color: $thirdColor;
+      }
+
+      h1, h2{
+        text-shadow: $shadow;
+      }
+
+      h1{
+        font-family: "franckBlack";
+        font-size: map-get($fontSizeArray, for60px);
+        margin-bottom: 2rem;
+      }
+      h2{
+        font-family: "franckMedium";
+        font-size: map-get($fontSizeArray, for30px);
+        margin-bottom: 4rem;
+      }
+      .pdf{
+        font-size: map-get($fontSizeArray, for20px);
+
+        a{
+          padding: 1rem 2rem;
+          border-radius: $borderRadius;
+          border: 2px solid $secondColor;
+          box-shadow: $shadow;
+          transition: 0.2s ease;
+          font-family: "charmBold";
+
+          &:hover{
+            background: $thirdColor;
+            color: $firstColor;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and(max-width: 850px) {
+    .homeContent{
+      margin-top: 1rem;
+      .content{
+        h1{
+          font-size: map-get($fontSizeArray, for60px) /1.5;
+        }
+        h2{
+          font-size: map-get($fontSizeArray, for30px) /1.5;
+        }
+        .pdf{
+          font-size: map-get($fontSizeArray, for20px) /1.5;
+          a{
+            padding: .5rem 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 580px) {
+    .homeContent{
+      margin-top: 1rem;
+      .content{
+        h1{
+          font-size: map-get($fontSizeArray, for60px) /2;
+        }
+        h2{
+          font-size: map-get($fontSizeArray, for30px) /2;
+        }
+        .pdf{
+          font-size: map-get($fontSizeArray, for20px) /2;
+          a{
+            padding: .5rem 1rem;
+          }
+        }
+      }
+    }
+  }
+
+}

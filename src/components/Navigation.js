@@ -14,7 +14,7 @@ const Navigation = () => {
       <div className="id">
         <div className="idContent">
           <img src={ ProfilPic } alt="profil-pic"></img>
-          <h3>Stéphane PIERRE</h3>
+          <h3>Stéphane <br/> PIERRE</h3>
         </div>
       </div>
 

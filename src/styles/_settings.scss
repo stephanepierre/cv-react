@@ -1,40 +1,59 @@
 
+
+//..for the responsive change at 850px and 580px....................................
+
+
 //............font familly...................................................
 
+//...........................charm (button).....................
+@font-face{
+  font-family: 'charmRegular';
+  src: url('./fonts/Charm/Charm-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'charmBold';
+  src: url('./fonts/Charm/Charm-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//.........................franck (content).........................
 @font-face {
   font-family: 'franckBlack';
   src: url('./fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Black.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-
 }
+
 @font-face {
   font-family: 'franckBold';
   src: url('./fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-
 }
+
 @font-face {
   font-family: 'franckLight';
   src: url('./fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-
 }
+
 @font-face {
   font-family: 'franckMedium';
   src: url('./fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-
 }
+
 @font-face {
   font-family: 'franckRegular';
   src: url('./fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-
 }
 
 //..............................font size......................................
@@ -72,7 +91,7 @@ $white: #F7FAFC;
 //...................general settings.......................................
 
 $borderRadius: 25px;
-$shadow: 0 1px 3px $black;
+$shadow: 1px 1px 4px $secondColor;
 $minHeight: 95vh;
 
 @mixin verticalCenter{
@@ -89,7 +108,7 @@ $minHeight: 95vh;
 
 body{
   margin: 1rem auto;
-  max-width: 1200px;
+  max-width: 1500px;
   font-family: 'franckRegular';
   color: $black;
 }

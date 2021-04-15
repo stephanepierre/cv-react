@@ -1,4 +1,9 @@
 .sidebar{
+
+  h3, span{
+    text-shadow: 1px 1px 1px $secondColor;
+  }
+
   background: $firstColor;
   height: 100%;
   min-height: $minHeight;
@@ -32,7 +37,6 @@
 
       h3{
         font-size: map-get($fontSizeArray, for20px);
-        text-transform: uppercase;
         letter-spacing: .2rem;
         margin-top: 1rem;
         color: $thirdColor;
