@@ -5,7 +5,7 @@ import IconHome from '../media/images/icons/icon-accueil.png'
 const notFound = () => {
   return (
     <div className="notFound">
-      <div className="notfoundContent">
+      <div className="notFoundContent">
         <h1> Désolé cette page n'existe pas !</h1>
         <NavLink exact to="/">
           <img src={ IconHome } alt="icon-home" />

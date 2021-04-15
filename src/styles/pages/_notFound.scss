@@ -1,0 +1,76 @@
+.notFound{
+  @include verticalCenter;
+  height: $minHeight;
+  background: $thirdColor;
+  border-radius: $borderRadius;
+  width: 100%;
+
+  .notFoundContent{
+    color: $white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    h1{
+      margin-right: 2rem;
+      align-self: center;
+      font-size: map-get($fontSizeArray, for35px);
+    }
+    a{
+      display: flex;
+      background: $firstColor;
+      width: 15%;
+      border: 2px solid $black;
+      border-radius: $borderRadius;
+      padding: .5rem 1rem;
+      align-items: center;
+      justify-content: center;
+
+      span{
+        color: $thirdColor;
+      }
+      &:hover{
+        transform: translate(2px, -2px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .notFound{
+    .notFoundContent{
+      flex-direction: column;
+      @include verticalCenter;
+      h1{
+        font-size: map-get($fontSizeArray, for35px) /1.5;
+        width: 100%;
+        margin: 0 0 2rem 0;
+        text-align: center;
+      }
+      a{
+        img{
+          width: 100%;
+        }
+        span{
+          display: none;       
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .notFound{
+    .notFoundContent{
+      h1{
+        font-size: map-get($fontSizeArray, for35px) /2;
+      }
+      a{
+        padding: .2rem .5rem;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
