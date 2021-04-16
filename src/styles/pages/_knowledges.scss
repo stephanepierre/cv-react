@@ -5,10 +5,12 @@
   overflow: hidden;
   display: grid;
   grid-template-columns: 38% 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 70% 1fr;
   grid-template-areas: 
   "L S S"
   "H H O";
+  row-gap: .5rem;
+  column-gap: .5rem;
   font-size: map-get($fontSizeArray, for11px);
 
   .languagesFrameworks, .hobbies, .otherKnowledges, .softSkills{
@@ -28,7 +30,6 @@
 //................................................................................................
   .languagesFrameworks{
     grid-area: L;
-    margin-bottom: .5rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -50,11 +51,10 @@
         width: 36%;
         &:nth-child(2){
           width: 20%;
+          text-align: center;
         }
         &:nth-child(3){
           width: 44%;
-        }
-        &:nth-child(2), &:nth-child(3){
           text-align: right;
         }
         &:nth-child(2)::before, &:nth-child(3)::before{
@@ -100,6 +100,44 @@
 //...............................softSkill page....................................................
   .softSkills{
     grid-area: S;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5% 1fr;
+    grid-template-areas: 
+    "T B"
+    "D D";
+    h4{
+      grid-area: T;
+    }
+    .button{
+      grid-area: B;
+      border-radius: $borderRadius;
+      border: 2px solid $secondColor;
+      width: 40%;
+      text-align: center;
+      align-self: center;
+      padding: .5rem 1rem;
+    }
+    .softSkillsContent{
+      grid-area: D;
+
+      &__list{
+        display: grid;
+        grid-template-columns: 10% 30% 60%;
+        margin-bottom: 1rem;
+        align-items: center;
+        img{
+          margin-right: .5rem;
+
+        }
+        h6{
+          margin-right: .5rem;
+
+        }
+        .text{
+        }
+      }
+    }
   }
 //...............................end of softSkill page .............................................
 //.................................................................................................

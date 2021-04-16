@@ -10,42 +10,29 @@ const SoftSkills = () => {
   return (
     <div className="softSkills">
       <h4>Mes Soft Skills</h4>
-      <div className="softSkillsContent">
-        <h6>Définition:</h6>
-        <a href="https://fr.wikipedia.org/wiki/Savoir-%C3%AAtre" target="_blank" rel="noreferrer noopener">Les soft skills </a>
-          (savoir-être) sont des compétences plus stables que des hard skills (savoir-faire). 
-          Ils apportent une "agilité" d'adaptation, ils renforcent les "savoir-faire".
-        <h6>Voici quelque uns de mes soft skills:</h6>
-        <ul className="listSoftSkills">
-          <li className="listSoftskills__content">
-            <img src={ Visualisation } alt="visualisation" />
-            <div className="title">La visualisation:</div> 
-            Je me projette loin dans le temps afin de prévoir les différents écueils. Dans le travail 
-            cela me permet d'anticiper les problèmes et d'établir une stratégie adaptée.
-          </li>
-          <li className="listSoftskills__content">
-            <img src={ Collectif } alt="collectif" />
-            <div className="title">Le sens du collectif:</div>
-            Pour moi on est une équipe, ma pratique des sports d'équipe m'a permis d'apprendre à 
-            faire confiance à mes coéquipiers et à les soutenir. C'est une valeur impérative, peu 
-            importe le poste, on doit se soutenir.
-          </li>
-          <li className="listSoftskills__content">
-            <img src={ Relaxation } alt="relaxation" />
-            <div className="title">La gestion du stress:</div> 
-            Encore une fois, le sport m'a beaucoup aidé dans ma gestion du stress. Mon parcours de vie 
-            m'a fait gagner en résistance. Un commercial doit savoir gérer son stress pour atteindre 
-            ses objectifs. Un maître-chien doit garder la tête froide lorsqu'un chien se jette sur 
-            lui, il faut pour savoir comment réagir et l'éduquer.
-          </li>
-          <li className="listSoftskills__content">
-            <img src={ Empathie } alt="empathie" />
-            <div className="title">L'empathie:</div> 
-            Je "ressens" très facilement ce que dégagent les gens autour de moi, cela m'a très souvent 
-            aidé dans l'atteinte de mes objectifs de commercial.
-          </li>
-        </ul>      
-      </div>
+      <a href="https://fr.wikipedia.org/wiki/Savoir-%C3%AAtre" target="_blank" rel="noreferrer noopener" className="button">Définition</a>
+      <ul className="softSkillsContent">
+        <li className="softSkillsContent__list">
+          <img src={ Visualisation } alt="visualisation" />
+          <h6>Visualisation:</h6> 
+          <p className="text">Je me projette pour établir une stratégie adaptée.</p>
+        </li>
+        <li className="softSkillsContent__list">
+          <img src={ Collectif } alt="collectif" />
+          <h6>Sens du collectif:</h6>
+          <p className="text">Faire confiance, se soutenir.</p>
+        </li>
+        <li className="softSkillsContent__list">
+          <img src={ Relaxation } alt="relaxation" />
+          <h6>Gestion du stress:</h6> 
+          <p className="text">Etre commercial et maitre-chien m'ont aidé à le devenir.</p>
+        </li>
+        <li className="softSkillsContent__list">
+          <img src={ Empathie } alt="empathie" />
+          <h6>Empathie:</h6> 
+          <p className="text">"Ressentir" les autres aide tous les jours dans les relations.</p>
+        </li>
+      </ul>      
     </div>
   );
 };
