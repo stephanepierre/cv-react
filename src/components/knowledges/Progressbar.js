@@ -3,7 +3,7 @@ import React from 'react';
 const Progressbar = (props) => {
   return (
     <div className={props.className}>
-      <h3>{props.title}</h3> 
+      <h4>{props.title}</h4> 
       <div className="months">
         <span>Mois d'expériences</span>
         <span>5 mois</span>

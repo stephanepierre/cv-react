@@ -7,11 +7,13 @@
     display: grid;
     grid-template-columns: 35% 70%;
     grid-template-rows: 1fr 1fr;
+    font-size: map-get($fontSizeArray, for11px);
 
     .languagesFrameworks, .hobbies, .otherKnowledges, .softSkills{
       background: $firstColor;
       border-radius: $borderRadius;
       padding: .8rem;
+
     }
   }
 }

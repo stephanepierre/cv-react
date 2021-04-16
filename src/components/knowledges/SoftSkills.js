@@ -9,44 +9,40 @@ import Empathie from '../../media/images/icons/icon-empathie.png';
 const SoftSkills = () => {
   return (
     <div className="softSkills">
-      <h3>Mes Soft Skills</h3>
+      <h4>Mes Soft Skills</h4>
       <div className="softSkillsContent">
-        <h4>Définition:</h4>
+        <h6>Définition:</h6>
         <a href="https://fr.wikipedia.org/wiki/Savoir-%C3%AAtre" target="_blank" rel="noreferrer noopener">Les soft skills </a>
           (savoir-être) sont des compétences plus stables que des hard skills (savoir-faire). 
           Ils apportent une "agilité" d'adaptation, ils renforcent les "savoir-faire".
-        <h5>Voici quelque uns de mes soft skills:</h5>
+        <h6>Voici quelque uns de mes soft skills:</h6>
         <ul className="listSoftSkills">
           <li className="listSoftskills__content">
             <img src={ Visualisation } alt="visualisation" />
-            <h6>La visualisation:</h6> 
-            Je suis une personne qui arrive à se projeter loin dans le temps afin de prévoir les 
-            différents écueils que je pourrais trouver sur ma route. Dans le travail cela me permet 
-            d'anticiper les problèmes en amont et d'établir une stratégie adaptée.
+            <div className="title">La visualisation:</div> 
+            Je me projette loin dans le temps afin de prévoir les différents écueils. Dans le travail 
+            cela me permet d'anticiper les problèmes et d'établir une stratégie adaptée.
           </li>
           <li className="listSoftskills__content">
             <img src={ Collectif } alt="collectif" />
-            <h6>Le sens du collectif:</h6>
-            Pour moi on est une équipe, ma pratique des sports d'équipe comme le volley, le hand et bien 
-            d'autres, m'ont permis d'apprendre à faire confiance à mes coéquipiers et de les soutenir. 
-            Dans le travail cette valeur est pour moi impérative, peu importe le poste, on est tous 
-            indispensables et on doit se soutenir.
+            <div className="title">Le sens du collectif:</div>
+            Pour moi on est une équipe, ma pratique des sports d'équipe m'a permis d'apprendre à 
+            faire confiance à mes coéquipiers et à les soutenir. C'est une valeur impérative, peu 
+            importe le poste, on doit se soutenir.
           </li>
           <li className="listSoftskills__content">
             <img src={ Relaxation } alt="relaxation" />
-            <h6>La gestion du stress:</h6> 
-            Encore une fois, le sport m'a beaucoup aidé dans ma gestion du stress, dans un match 
-            d'importance il faut savoir rester maître de soi. Mes parcours de vie personnel et 
-            professionnel m'ont fait gagner en résistance. En tant que commercial il faut savoir gérer 
-            son stress pour atteindre ses objectifs. Comme maître-chien, lorsque le chien se jette sur 
-            vous, il faut garder la tête froide pour savoir comment réagir et l'éduquer.
+            <div className="title">La gestion du stress:</div> 
+            Encore une fois, le sport m'a beaucoup aidé dans ma gestion du stress. Mon parcours de vie 
+            m'a fait gagner en résistance. Un commercial doit savoir gérer son stress pour atteindre 
+            ses objectifs. Un maître-chien doit garder la tête froide lorsqu'un chien se jette sur 
+            lui, il faut pour savoir comment réagir et l'éduquer.
           </li>
           <li className="listSoftskills__content">
             <img src={ Empathie } alt="empathie" />
-            <h6>L'empathie:</h6> 
+            <div className="title">L'empathie:</div> 
             Je "ressens" très facilement ce que dégagent les gens autour de moi, cela m'a très souvent 
-            aidé dans l'atteinte de mes objectifs de commercial. Grâce à ça, vous pouvez vous adapter à 
-            la personne en face de vous.
+            aidé dans l'atteinte de mes objectifs de commercial.
           </li>
         </ul>      
       </div>

@@ -3,7 +3,7 @@ import React from 'react';
 const OtherKnowledges = () => {
   return (
     <div className="otherKnowledges">
-      <h3>Autres competences</h3>
+      <h4>Autres competences</h4>
       <div className="otherKnowledgesContent">
         <ul className="otherKnowledgesContent__list">
           <li>Anglais B1</li>

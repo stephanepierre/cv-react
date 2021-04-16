@@ -32,3 +32,5 @@
 [0415/175625.326:ERROR:crash_report_database_win.cc(606)] CreateDirectory C:\ProgramData\Safe Family\Logs: Accès refusé. (0x5)
 [0415/192117.612:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
 [0415/192117.614:ERROR:crash_report_database_win.cc(606)] CreateDirectory C:\ProgramData\Safe Family\Logs: Accès refusé. (0x5)
+[0416/090239.177:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
+[0416/090239.180:ERROR:crash_report_database_win.cc(606)] CreateDirectory C:\ProgramData\Safe Family\Logs: Accès refusé. (0x5)
