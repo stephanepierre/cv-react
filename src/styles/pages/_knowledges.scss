@@ -1,0 +1,116 @@
+.knowledgesContent{
+  min-height: $minHeight;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 38% 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "L S S"
+  "H H O";
+  font-size: map-get($fontSizeArray, for11px);
+
+  .languagesFrameworks, .hobbies, .otherKnowledges, .softSkills{
+    background: $firstColor;
+    border-radius: $borderRadius;
+    padding: .8rem;
+
+  }
+  h4{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: "franckMedium";
+  }
+
+//................................................................................................
+//..............................Language page.....................................................
+//................................................................................................
+  .languagesFrameworks{
+    grid-area: L;
+    margin-bottom: .5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "L"
+    "F";
+    .languagesDisplay{
+      grid-area: L;
+    }
+    .frameworksDisplay{
+      grid-area: F;
+    }
+    .months{
+      font-size: .8rem;
+      display: flex;
+      justify-content: space-between;
+      color: $white;
+      span{
+        width: 36%;
+        &:nth-child(2){
+          width: 20%;
+        }
+        &:nth-child(3){
+          width: 44%;
+        }
+        &:nth-child(2), &:nth-child(3){
+          text-align: right;
+        }
+        &:nth-child(2)::before, &:nth-child(3)::before{
+          content: "";
+          position: absolute;
+          height: 210px;
+          width: 1px;
+          background: $white;
+          transform: translate(9px, 19px);
+        }
+      }
+    }
+    .languagesList{
+      padding-top: .5rem;
+
+      .progressBar{
+        height: .4rem;
+        background: transparent;
+        border-radius: 50px;
+        margin-top: .2rem;
+        position: relative;
+
+        &::after{   //here I make the progressBar and I take the content who's in languages page.....
+          content: "";
+          background: $secondColor;
+          border-radius: 50px;
+          height: .4rem;
+          position: absolute;
+          width: 0%;
+          animation: line 1.5s ease-out forwards; // here I make the animation of the progress bar
+
+          @keyframes line {  
+            to{  // here I say when the animation is end the calcul of my experience take all the line 
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+//...............................end of language page .............................................
+//.................................................................................................
+//...............................softSkill page....................................................
+  .softSkills{
+    grid-area: S;
+  }
+//...............................end of softSkill page .............................................
+//.................................................................................................
+//...............................otherKnowledges page...............................................
+  .otherKnowledges{
+    grid-area: O;
+  }
+//...............................end of otherKnowledges page .......................................
+//.................................................................................................
+//...............................hobbies page....................................................
+  .hobbies{
+    grid-area: H;
+  }
+}
