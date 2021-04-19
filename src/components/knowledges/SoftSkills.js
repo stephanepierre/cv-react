@@ -25,7 +25,7 @@ const SoftSkills = () => {
         <li className="softSkillsContent__list">
           <img src={ Relaxation } alt="relaxation" />
           <h6>Gestion du stress:</h6> 
-          <p className="text">Etre commercial et maitre-chien m'ont aidé à le devenir.</p>
+          <p className="text">Etre commercial et maitre-chien m'ont aidé.</p>
         </li>
         <li className="softSkillsContent__list">
           <img src={ Empathie } alt="empathie" />

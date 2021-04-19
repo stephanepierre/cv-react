@@ -100,13 +100,16 @@ h3{
   font-size: map-get($fontSizeArray, for30px);
 }
 h4{
-  font-size: map-get($fontSizeArray, for25px);
-}
-h5{
   font-size: map-get($fontSizeArray, for20px);
 }
+h5{
+  font-size: map-get($fontSizeArray, for16px);
+}
 h6{
-  font-size: map-get($fontSizeArray, for18px);
+  font-size: map-get($fontSizeArray, for14px);
+}
+h7{
+  font-size: map-get($fontSizeArray, for13px);
 }
 
 
@@ -121,14 +124,17 @@ h6{
     font-size: map-get($fontSizeArray, for30px) /1.5;
   } 
   h4{ 
-    font-size: map-get($fontSizeArray, for25px) /1.5;
-  } 
-  h5{ 
     font-size: map-get($fontSizeArray, for20px) /1.5;
   } 
+  h5{ 
+    font-size: map-get($fontSizeArray, for16px) /1.5;
+  } 
   h6{ 
-    font-size: map-get($fontSizeArray, for18px) /1.5;
+    font-size: map-get($fontSizeArray, for14px) /1.5;
   }
+  h7{
+    font-size: map-get($fontSizeArray, for13px) /1.5;
+  }  
 }
 @media screen and(max-width: 580px) {
   h1{
@@ -141,14 +147,18 @@ h6{
     font-size: map-get($fontSizeArray, for30px) /2;
   } 
   h4{ 
-    font-size: map-get($fontSizeArray, for25px) /2;
-  } 
-  h5{ 
     font-size: map-get($fontSizeArray, for20px) /2;
   } 
+  h5{ 
+    font-size: map-get($fontSizeArray, for16px) /2;
+  } 
   h6{ 
-    font-size: map-get($fontSizeArray, for18px) /2;
+    font-size: map-get($fontSizeArray, for14px) /2;
   }
+  h7{
+    font-size: map-get($fontSizeArray, for13px) /2;
+  }
+  
 }  
 
   //...........................colors......................................
@@ -179,10 +189,13 @@ $minHeight: 95vh;
 
 body{
   margin: 1rem auto;
-  max-width: 1500px;
+  max-width: 1250px;
   font-family: 'franckRegular';
   color: $black;
   background: $white;
+  @media screen and (max-width: 850px){
+    margin: .3rem .3rem;
+  }
 }
 
 button{
@@ -199,7 +212,7 @@ a{
   cursor: pointer;
 }
 
-a:visited, h1, h2, h3, h4, h5, h6{
+a:visited, h1, h2, h3, h4, h5, h6, h7{
   color: $thirdColor;
 }
 
@@ -216,10 +229,5 @@ a:visited, h1, h2, h3, h4, h5, h6{
 
   @media screen and (max-width: 850px) {
     margin-left: 0;
-  }
-}
-@media screen and (max-width: 1260px) {
-  body{
-    margin: 1rem;
   }
 }

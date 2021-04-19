@@ -4,14 +4,14 @@
   position: relative;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 38% 1fr 1fr;
-  grid-template-rows: 70% 1fr;
+  grid-template-columns: 60% 1fr ;
+  grid-template-rows: 55% 1fr;
   grid-template-areas: 
-  "L S S"
-  "H H O";
+  "L O"
+  "S S";
   row-gap: .5rem;
   column-gap: .5rem;
-  font-size: map-get($fontSizeArray, for11px);
+  font-size: .9rem;
 
   .languagesFrameworks, .hobbies, .otherKnowledges, .softSkills{
     background: $firstColor;
@@ -19,8 +19,8 @@
     padding: .8rem;
 
   }
-  h4{
-    margin-bottom: 1rem;
+  h5{
+    margin-bottom: .5rem;
     text-transform: uppercase;
     font-family: "franckMedium";
   }
@@ -29,18 +29,11 @@
 //..............................Language page.....................................................
 //................................................................................................
   .languagesFrameworks{
-    grid-area: L;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "L"
-    "F";
-    .languagesDisplay{
-      grid-area: L;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .frameworksDisplay{
-      grid-area: F;
+      margin-bottom: .5rem;
     }
     .months{
       font-size: .8rem;
@@ -60,13 +53,24 @@
         &:nth-child(2)::before, &:nth-child(3)::before{
           content: "";
           position: absolute;
-          height: 210px;
+          height: 195px;
           width: 1px;
           background: $white;
           transform: translate(9px, 19px);
         }
       }
     }
+    .languagesDisplay{
+      .months{
+        span{
+          width: 36%;
+          &:nth-child(2)::before, &:nth-child(3)::before{
+            height: 150px;
+          }
+        }
+      }
+    }
+
     .languagesList{
       padding-top: .5rem;
 
@@ -102,39 +106,43 @@
     grid-area: S;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5% 1fr;
+    grid-template-rows: 15% 1fr;
     grid-template-areas: 
     "T B"
     "D D";
-    h4{
+    h5{
       grid-area: T;
     }
     .button{
       grid-area: B;
       border-radius: $borderRadius;
       border: 2px solid $secondColor;
+      box-shadow: $shadow;
+      transition: 0.3s ease;
+      font-family: "charmBold";
       width: 40%;
+      height: 50%;
       text-align: center;
-      align-self: center;
-      padding: .5rem 1rem;
+    }
+    .button:hover{
+      background: $thirdColor;
+      color: $firstColor;
     }
     .softSkillsContent{
       grid-area: D;
 
       &__list{
-        display: grid;
-        grid-template-columns: 10% 30% 60%;
+        display: flex;
+        flex-wrap: nowrap;
         margin-bottom: 1rem;
         align-items: center;
         img{
-          margin-right: .5rem;
+          margin-right: .3rem;
 
         }
         h6{
-          margin-right: .5rem;
+          margin-right: 1rem;
 
-        }
-        .text{
         }
       }
     }
@@ -147,8 +155,4 @@
   }
 //...............................end of otherKnowledges page .......................................
 //.................................................................................................
-//...............................hobbies page....................................................
-  .hobbies{
-    grid-area: H;
-  }
 }

@@ -1,18 +1,19 @@
 import React from 'react';
-import Hand from '../../media/images/icons/icon-hand.png';
-import Volley from '../../media/images/icons/icon-volleyBall.png';
-import Book from '../../media/images/icons/icon-livre.png';
-import Film from '../../media/images/icons/icon-film.png';
-import Musique from '../../media/images/icons/icon-musique.png';
-import Web from '../../media/images/icons/icon-web.png';
-import Voyage from '../../media/images/icons/icon-voyage.png';
-import OtherInterest from '../../media/images/icons/icon-other.png';
+import Hand from '../media/images/icons/icon-hand.png';
+import Volley from '../media/images/icons/icon-volleyBall.png';
+import Book from '../media/images/icons/icon-livre.png';
+import Film from '../media/images/icons/icon-film.png';
+import Musique from '../media/images/icons/icon-musique.png';
+import Web from '../media/images/icons/icon-web.png';
+import Voyage from '../media/images/icons/icon-voyage.png';
+import Moto from '../media/images/icons/icon-moto.png'
+import OtherInterest from '../media/images/icons/icon-other.png';
 
 
 const Hobbies = () => {
   return (
     <div className="hobbies">
-      <h4>Mes loisirs</h4>
+      <h5>Mes loisirs</h5>
       <ul className="hobbiesContent">
         <li className="interest">
           <img src={ Hand } alt="hand" />
@@ -55,6 +56,13 @@ const Hobbies = () => {
           J'ai des goûts très éclectiques, de la musique 
           classique au hard-rock en passant par Soprano et Michel Sardou.
         </li>
+        <li className="interest">
+          <img src={ Moto } alt="moto" />
+          <h6>La moto:</h6>
+          J'ai des goûts très éclectiques, de la musique 
+          classique au hard-rock en passant par Soprano et Michel Sardou.
+        </li>
+
         <li className="interest">
           <img src={ OtherInterest } alt="otherInterest" />
           <h6>Encore?</h6>
