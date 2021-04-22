@@ -216,7 +216,12 @@ a:visited, h1, h2, h3, h4, h5, h6, h7{
   color: $thirdColor;
 }
 
-.home, .knowledges, .portfolio, .contact, .experiences{
+.home, 
+.knowledges, 
+.portfolio, 
+.contact, 
+.experiences, 
+.hobbies{
   display: flex;
 
   @media screen and (max-width: 850px){
@@ -224,7 +229,12 @@ a:visited, h1, h2, h3, h4, h5, h6, h7{
   }
 }
 
-.homeContent, .knowledgesContent, .portfolioContent, .contactContent, .experiencesContent{
+.homeContent, 
+.knowledgesContent, 
+.portfolioContent, 
+.contactContent, 
+.experiencesContent, 
+.hobbiesContent{
   margin-left: .4rem;
 
   @media screen and (max-width: 850px) {

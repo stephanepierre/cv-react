@@ -4,9 +4,11 @@ import Navigation from '../components/Navigation';
 
 const contact = () => {
   return (
-    <div>
+    <div className="hobbies">
       <Navigation />
-      <Hobbies />
+      <div className="hobbiesContent">
+        <Hobbies />
+      </div>
     </div>
   );
 };
