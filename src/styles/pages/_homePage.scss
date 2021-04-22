@@ -25,12 +25,10 @@
 
       h1{
         font-family: "franckBlack";
-        font-size: map-get($fontSizeArray, for60px);
         margin-bottom: 2rem;
       }
       h2{
         font-family: "franckMedium";
-        font-size: map-get($fontSizeArray, for30px);
         margin-bottom: 4rem;
       }
       .pdf{
@@ -41,7 +39,7 @@
           border-radius: $borderRadius;
           border: 2px solid $secondColor;
           box-shadow: $shadow;
-          transition: 0.2s ease;
+          transition: 0.3s ease;
           font-family: "charmBold";
 
           &:hover{
@@ -57,12 +55,6 @@
     .homeContent{
       margin-top: 1rem;
       .content{
-        h1{
-          font-size: map-get($fontSizeArray, for60px) /1.5;
-        }
-        h2{
-          font-size: map-get($fontSizeArray, for30px) /1.5;
-        }
         .pdf{
           font-size: map-get($fontSizeArray, for20px) /1.5;
           a{
@@ -76,12 +68,6 @@
     .homeContent{
       margin-top: 1rem;
       .content{
-        h1{
-          font-size: map-get($fontSizeArray, for60px) /2;
-        }
-        h2{
-          font-size: map-get($fontSizeArray, for30px) /2;
-        }
         .pdf{
           font-size: map-get($fontSizeArray, for20px) /2;
           a{
