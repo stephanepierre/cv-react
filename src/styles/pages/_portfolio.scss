@@ -1,0 +1,24 @@
+.portfolioContent{
+  min-height: $minHeight;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: $firstColor;
+  border-radius: $borderRadius;
+  padding: .8rem;
+
+  .projects{
+
+    .imgIcons, .imgIconPlus{
+      width: 20px;
+      height: 20px;
+    }
+
+    .imgSite{
+      width: 200px;
+      height: 120px;
+    }
+
+  }
+
+}
