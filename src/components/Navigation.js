@@ -51,18 +51,19 @@ const Navigation = () => {
           </li>
 
           <li>
+            <NavLink exact to="/portfolio" activeClassName="active">
+              <img src={ IconPortfolio } alt="icon-portfolio" />
+              <span>Portfolio</span>
+            </NavLink>
+          </li>
+          
+          <li>
             <NavLink exact to="/contact" activeClassName="active">
               <img src={ IconContact } alt="icon-contact" />
               <span>Contact</span>
             </NavLink>
           </li>
 
-          <li>
-            <NavLink exact to="/portfolio" activeClassName="active">
-              <img src={ IconPortfolio } alt="icon-portfolio" />
-              <span>Portfolio</span>
-            </NavLink>
-          </li>
         </ul>
       </div>
       <div className="socialNetwork">

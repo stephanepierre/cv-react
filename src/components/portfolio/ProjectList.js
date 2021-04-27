@@ -16,8 +16,9 @@ class ProjectList extends Component {
       {id: 8, value: "typescript"},
       {id: 9, value: "bootstrap"},
       {id: 10, value: "tailwind"},
+      {id: 11, value: "all"},
     ],
-    selectedRadio: 'javascript'
+    selectedRadio: 'all'
   };
 
   handleRadio = (e) => {
@@ -35,14 +36,16 @@ class ProjectList extends Component {
             radios.map((radio) => {
               return (
                 <li key={radio.id}>
-                  <input 
-                    type="radio" 
-                    name="radio" 
-                    checked={radio.value === selectedRadio} 
-                    value={radio.value}
-                    id={radio.value}
-                    onChange={this.handleRadio} />
-                    <label htmlFor={radio.value}>{radio.value}</label>
+                  <label htmlFor={radio.value}>{radio.value}
+                    <input 
+                      type="radio" 
+                      name="radio" 
+                      checked={radio.value === selectedRadio} 
+                      value={radio.value}
+                      id={radio.value}
+                      onChange={this.handleRadio} />
+                    <span className="checkmark"></span>
+                  </label>
                 </li>
               )
             })
