@@ -1,4 +1,3 @@
-import React from 'react';
 import FirstCv from '../media/images/monPremierCv.PNG';
 import IconHtml from '../media/images/icons/icon-html.png';
 import IconCss from '../media/images/icons/icon-css.png';

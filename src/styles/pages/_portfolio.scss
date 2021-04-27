@@ -1,9 +1,21 @@
 .portfolioContent{
   min-height: $minHeight;
-  width: 100%;
+  display: grid;
+  grid-template-rows: 17fr 83%;
+  grid-template-areas: 
+  "1"
+  "2";
 
-  .projects, .radioDisplay{
-    position: relative;
+  @media screen and (max-width:850px) {
+    grid-template-rows: 1fr 90%;
+  }
+
+  @media screen and (max-width: 580px) {
+    grid-template-rows: 1fr 85%;
+  }
+
+
+  .radioDisplay, .project{
     overflow: hidden;
     background: $firstColor;
     border-radius: $borderRadius;
@@ -14,6 +26,7 @@
   //................... radio side ................................................
   //...............................................................................
   .radioDisplay{
+    grid-area: 1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: $thirdColor;
@@ -127,18 +140,62 @@
   //................... projects side ................................................
   //...............................................................................
   .projects{
-   height: 100vh;
+    grid-area: 2;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   row-gap: .4rem;
+   column-gap: .4rem;
+    .project{
+      display: grid;
+      grid-template-columns: 1fr 1fr 6%;
+      grid-template-rows: 7% 40% 1fr;
+      grid-template-areas: 
+      "I I I"
+      "T T T"
+      "P P B";
+  
 
-    .imgIcons, .imgIconPlus{
-      width: 20px;
-      height: 20px;
+      .icons{
+        grid-area: I;
+      }
+
+      h3{
+        grid-area: T;
+        align-self: center;
+      }
+
+      .imgSite{
+        grid-area: P;
+        width: 70%;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        justify-self: center;
+      }
+
+      .infos{
+        grid-area: B;
+        align-self: end;
+        cursor: pointer;
+      }
+
+      .imgIcons, .imgIconPlus{
+        width: 20px;
+        height: 20px;
+        margin: .2rem;
+      }
+
     }
+  }
 
-    .imgSite{
-      width: 230px;
-      height: 120px;
+ /*........................................responsive for projects .........................*/
+
+
+  @media screen and (max-width: 850px) {
+    .projects{
+      grid-template-columns: 1fr;
+      row-gap: .2rem;
     }
-
   }
   
 }
