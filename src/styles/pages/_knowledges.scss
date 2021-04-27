@@ -115,18 +115,9 @@
     }
     .button{
       grid-area: B;
-      border-radius: $borderRadius;
-      border: 2px solid $secondColor;
-      box-shadow: $shadow;
-      transition: 0.3s ease;
-      font-family: "charmBold";
       width: 40%;
       height: 50%;
       text-align: center;
-    }
-    .button:hover{
-      background: $thirdColor;
-      color: $firstColor;
     }
     .softSkillsContent{
       grid-area: D;

@@ -1,0 +1,13 @@
+.button{
+  border-radius: $borderRadius;
+  border: 2px solid $secondColor;
+  box-shadow: $shadow;
+  transition: 0.3s ease;
+  font-family: "charmBold";
+  text-align: center;
+  cursor: pointer;
+  &:hover{
+    background: $thirdColor;
+    color: $white;
+  }
+}

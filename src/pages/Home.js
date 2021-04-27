@@ -11,7 +11,7 @@ const home = () => {
           <h1>Stéphane PIERRE</h1>
           <h2>Développeur Full-stack</h2>
           <div className="pdf">
-            <a href={ Cv } target="_blank" rel="noreferrer noopener">
+            <a href={ Cv } target="_blank" rel="noreferrer noopener" className="button">
               Télécharger le CV
             </a>
           </div>
