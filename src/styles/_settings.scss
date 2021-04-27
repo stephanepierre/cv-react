@@ -175,6 +175,11 @@ $borderRadius: 25px;
 $shadow: 1px 1px 4px $secondColor;
 $minHeight: 95vh;
 $border: 1px solid $secondColor;
+$shadowText: 1px 1px 1px $secondColor;
+
+h1, h2, h3, h4, h5, h6, h7{
+  text-shadow: $shadowText;
+}
 
 @mixin verticalCenter{
   display: flex;

@@ -1,7 +1,6 @@
 .sidebar{
-
-  h3, span{
-    text-shadow: 1px 1px 1px $secondColor;
+  span{
+    text-shadow: $shadowText;
   }
 
   background: $firstColor;

@@ -6,12 +6,8 @@
   overflow: hidden;
   width: 100%;
 
-  h3{
-    text-align: center;
-    font-family: "franckMedium";
-  }
-
   .experience{
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: 70% 1fr;
     grid-template-rows: 36% 64%;
@@ -49,18 +45,14 @@
       color: $thirdColor;
     }
 
-    .qualifications > li{
+    .qualifications > li, .use > li, .use{
       font-family: "franckRegular";
       font-size: map-get($fontSizeArray, for11px);
+      color: $black;
     }
-    .use{
-      font-family: "charmBold";
-      font-size: map-get($fontSizeArray, for11px);
 
-      li{
-        font-family: "franckRegular";
-        font-size: map-get($fontSizeArray, for11px);
-      }
+    .use{
+      color: $thirdColor;
     }
   }
   @media screen and (max-width: 850px){

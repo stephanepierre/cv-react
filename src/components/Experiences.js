@@ -3,7 +3,6 @@ import React from 'react';
 const ExperiencesBlock = () => {
   return (
     <div>
-      <h3>Expériences</h3>
       <div className="experience">
         <div className="dev">
           <h5>Développeur Front-End</h5>

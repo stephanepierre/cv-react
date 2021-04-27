@@ -32,7 +32,7 @@ export const portfolioData = [
     languages: ['all', 'react', 'next.js', 'tailwind'],
     languagesIcons: [IconReact, IconNext , IconTailwind],
     source: 'https://github.com/stephanepierre/formation-rest.js',
-    info:"Afin de m'entrainer à utiliser React et Next.js, j'ai réalisé ce site grâce à un tuto. J'y est également utilisé pour la première fois Tailwind que j'ai trouvé assez sympa d'utilisation.",
+    info:"Afin de m'entrainer à utiliser React et Next.js, j'ai réalisé ce site grâce à un tuto. J'y ai également utilisé pour la première fois Tailwind que j'ai trouvé assez sympa d'utilisation.",
     picture: SiteCrypto
   },
   {
@@ -41,7 +41,7 @@ export const portfolioData = [
     languages: ['all', 'react', 'scss', 'framer-motion', 'typescript', 'next.js'],
     languagesIcons: [IconReact, IconSass, IconFramerMotion, IconTypescript, IconNext],
     source: 'https://github.com/stephanepierre?tab=repositories',
-    info:"Lors de mon stage j'ai créé toute la partie front-end d'un site. celui-ci n'étant pas encore en ligne je ne peux malheureusement pas indiquer son nom ni mettre de photo. J'ai utilisé React.js, SCSS, Next.Js, Framer-motion et typescript. Il faut savoir que je n'avais jamais utilisé aucun de ces langages avant ce projet et je suis assez fière du résultat.",
+    info:"Lors de mon stage j'ai créé toute la partie front-end d'un site. Celui-ci n'étant pas encore en ligne et ayant des droits réservés je ne peux malheureusement pas indiquer son nom, mettre de photo ou de code source. J'ai utilisé React, SCSS, Next.Js, Framer-motion et Typescript. Il faut savoir que je n'avais jamais utilisé aucun de ces langages avant ce projet et je suis assez fière du résultat.",
     picture: SiteBenJo
   },
   {
@@ -49,8 +49,8 @@ export const portfolioData = [
     name: 'Mon nouveau  site CV',
     languages: ['all', 'react', 'scss', 'framer-motion', 'javascript'],
     languagesIcons: [IconReact, IconSass, IconFramerMotion, IconJavaScript],
-    source: 'https://github.com/stephanepierre?tab=repositories',
-    info:"Lors de mon stage j'ai créé toute la partie front-end d'un site. celui-ci n'étant pas encore en ligne je ne peux malheureusement pas indiquer son nom ni mettre de photo. J'ai utilisé React.js, SCSS, Next.Js, Framer-motion et typescript. Il faut savoir que je n'avais jamais utilisé aucun de ces langages avant ce projet et je suis assez fière du résultat.",
+    source: 'https://github.com/stephanepierre/cv-react',
+    info:"Suite à mon stage j'ai décidé de refaire mon site présentant mon CV. Je l'ai créé avec React, SCSS et Framer-motion. Je met en pratique ce que j'ai pu apprendre durant ces 2 mois au sein de mon entreprise d'accueil.",
     picture: SiteNouveauCv
   },
 
