@@ -1,0 +1,16 @@
+.buttonModal{
+    border-radius: $borderRadius;
+    border: 2px solid $secondColor;
+    box-shadow: $shadow;
+    transition: 0.3s ease;
+    font-family: "charmBold";
+    text-align: center;
+    cursor: pointer;
+    padding: .5rem 3rem;
+    display: inline-block;
+    
+    &:hover{
+      background: $thirdColor;
+      color: $white;
+    } 
+}
