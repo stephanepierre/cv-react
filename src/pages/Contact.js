@@ -1,11 +1,14 @@
 import React from 'react';
+import ContactForm from '../components/ContactForm';
 import Navigation from '../components/Navigation';
 
 const contact = () => {
   return (
-    <div>
+    <div className="contact">
       <Navigation />
-      salut depuis contact et fini lol
+      <div className="contactContent">
+        <ContactForm />
+      </div>
     </div>
   );
 };
