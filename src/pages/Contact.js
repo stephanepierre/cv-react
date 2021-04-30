@@ -1,14 +1,23 @@
 import React from 'react';
 import ContactForm from '../components/ContactForm';
 import Navigation from '../components/Navigation';
+import {motion} from 'framer-motion';
 
 const contact = () => {
   return (
     <div className="contact">
       <Navigation />
-      <div className="contactContent">
+      <motion.div 
+        className="contactContent"
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{
+          scale:1,
+          duration: 1.5
+        }}
+      >
         <ContactForm />
-      </div>
+      </motion.div>
     </div>
   );
 };

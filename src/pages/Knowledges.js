@@ -3,16 +3,25 @@ import Languages from '../components/knowledges/Languages';
 import OtherKnowledges from '../components/knowledges/OtherKnowledges';
 import SoftSkills from '../components/knowledges/SoftSkills';
 import Navigation from '../components/Navigation';
+import {motion} from 'framer-motion';
 
 const knowledges = () => {
   return (
     <div className="knowledges">
       <Navigation />
-      <div className="knowledgesContent">
+      <motion.div 
+          className="knowledgesContent"        
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{
+          scale:1,
+          duration: 1.5
+        }}
+      >
         <Languages />
         <SoftSkills />
         <OtherKnowledges />
-      </div>
+      </motion.div>
     </div>
   );
 };

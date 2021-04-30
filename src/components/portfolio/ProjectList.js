@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { portfolioData } from '../../data/portfolioData';
 import Project from './Project';
+import {motion} from 'framer-motion';
 
 class ProjectList extends Component {
   state={
@@ -30,7 +31,15 @@ class ProjectList extends Component {
     let {projects, radios, selectedRadio} = this.state;
 
     return (
-      <div className="portfolioContent">
+      <motion.div 
+        className="portfolioContent"
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{
+          scale:1,
+          duration: 1.5
+        }}
+      >
         <ul className="radioDisplay">
           {
             radios.map((radio) => {
@@ -65,7 +74,7 @@ class ProjectList extends Component {
             })
           }
         </div>
-      </div>
+      </motion.div>
     );
   }
 }

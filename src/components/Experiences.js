@@ -56,7 +56,7 @@ const ExperiencesBlock = () => {
             <li>LCL en 2008</li>
             <ul className="qualifications">
               <li>- Accueil des clients au guichet</li>
-              <li>- Vente de produit type livret</li>
+              <li>- Vente de produits de type livret</li>
               <li>- Phoning</li>
             </ul>
           </ul>

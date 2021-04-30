@@ -15,7 +15,7 @@ const SoftSkills = () => {
         <li className="softSkillsContent__list">
           <img src={ Visualisation } alt="visualisation" />
           <h6>Visualisation:</h6> 
-          <p className="text">Je me projette pour établir une stratégie adaptée. La vente m'a permit de développer cette aptitude pour pouvoir répondre aux objections des clients.</p>
+          <p className="text">Je me projette pour établir une stratégie adaptée. La vente m'aura permis de développer cette aptitude pour pouvoir répondre aux objections des clients.</p>
         </li>
         <li className="softSkillsContent__list">
           <img src={ Collectif } alt="collectif" />
@@ -25,12 +25,12 @@ const SoftSkills = () => {
         <li className="softSkillsContent__list">
           <img src={ Relaxation } alt="relaxation" />
           <h6>Gestion du stress:</h6> 
-          <p className="text">Etre commercial et maitre-chien m'ont aidé. Il faut savoir rester maître de soi quand un chien vous fonce dessus et que votre rôle est de le faire mordre.</p>
+          <p className="text">Travailler en tant que commercial et maitre-chien m'a aidé. Il faut savoir rester maître de soi quand un chien vous fonce dessus et que votre rôle est de le faire mordre.</p>
         </li>
         <li className="softSkillsContent__list">
           <img src={ Empathie } alt="empathie" />
           <h6>Empathie:</h6> 
-          <p className="text">"Ressentir" les autres aide tous les jours dans les relations. On peut sentir qu'un camarade est dans une impasse et lui apporter des solutions.</p>
+          <p className="text">"Ressentir" les autres aide tous les jours dans les relations. On peut sentir qu'un camarade est dans une impasse et lui apporter son aide.</p>
         </li>
       </ul>      
     </div>
