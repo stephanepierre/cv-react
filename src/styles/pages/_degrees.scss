@@ -1,0 +1,38 @@
+.degreesContent{
+  min-height: $minHeight;
+  background: $firstColor;
+  border-radius: $borderRadius;
+  padding: 1rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, 250px);
+  column-gap: .5rem;
+  row-gap: 3rem;
+  .degree{
+    width: 100%;
+    height: 100%;
+
+    img{
+      width: 100%;
+      height: 100%;
+      border: $border;
+      box-shadow: $shadow;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .degreesContent{
+    row-gap: .5rem;
+    grid-template-rows: repeat(3, 180px);
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media screen and (max-width:580px) {
+  .degreesContent{
+    row-gap: .5rem;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, auto);
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Cv from '../media/images/cv.pdf';
 import {motion} from 'framer-motion';
+import {NavLink} from 'react-router-dom'
 
 const home = () => {
   return (
@@ -22,6 +23,11 @@ const home = () => {
             <a href={ Cv } target="_blank" rel="noreferrer noopener" className="button">
               Télécharger le CV
             </a>
+          </div>
+          <div>
+            <NavLink exact to="/degrees" activeClassName="active">
+              <div className="button">Voir les diplômes</div>
+            </NavLink>
           </div>
         </div>
       </motion.div>

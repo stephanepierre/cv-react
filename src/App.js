@@ -6,6 +6,7 @@ import Knowledges from './pages/Knowledges';
 import NotFound from './pages/NotFound';
 import Portfolio from './pages/Portfolio';
 import Hobbies from './pages/Hobbies';
+import Degrees from './pages/Degrees';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
 
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/Hobbies" component={Hobbies} />
             <Route path="/Portfolio" component={Portfolio} />
             <Route path="/Contact" component={Contact} />
+            <Route path="/Degrees" component={Degrees} />
             <Route component={NotFound} />
           </Switch>
         </AnimatePresence>

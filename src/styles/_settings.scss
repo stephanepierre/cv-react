@@ -223,7 +223,8 @@ a:visited, h1, h2, h3, h4, h5, h6, h7{
 .portfolio, 
 .contact, 
 .experiences, 
-.hobbies{
+.hobbies,
+.degrees{
   display: flex;
 
   @media screen and (max-width: 850px){
@@ -236,7 +237,8 @@ a:visited, h1, h2, h3, h4, h5, h6, h7{
 .portfolioContent, 
 .contactContent, 
 .experiencesContent, 
-.hobbiesContent{
+.hobbiesContent,
+.degreesContent{
   margin-left: .4rem;
 
   @media screen and (max-width: 850px) {
