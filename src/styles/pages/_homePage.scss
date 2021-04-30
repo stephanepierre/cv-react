@@ -5,7 +5,6 @@
     background-position: center center;
     min-height: $minHeight;
     width: 100%;
-    min-height: 500px;
     border-radius: $borderRadius;
     position: relative;
     overflow: hidden;
@@ -27,14 +26,16 @@
         font-family: "franckMedium";
         margin-bottom: 4rem;
       }
-      .pdf{
-        .button{
-          font-size: map-get($fontSizeArray, for20px);
-          padding: 1rem 2rem;
-          &:hover{
-            color: $white;
-          }
+      .button, .pdf > .button{
+        font-size: map-get($fontSizeArray, for20px);
+        padding: 1rem 2rem;
+        &:hover{
+          color: $white;
         }
+      }
+      .button{
+        display: inline-flex;
+        margin-top: 1rem;
       }
     }
   }
@@ -43,11 +44,9 @@
     .homeContent{
       margin-top: 1rem;
       .content{
-        .pdf{
-          .button{
-            padding: .5rem 1rem;
-            font-size: map-get($fontSizeArray, for20px) /1.5;
-          }
+        .button, .pdf > .button{
+          padding: .5rem 1rem;
+          font-size: map-get($fontSizeArray, for20px) /1.5;
         }
       }
     }
@@ -56,11 +55,9 @@
     .homeContent{
       margin-top: 1rem;
       .content{
-        .pdf{
-          .button{
-            padding: .5rem 1rem;
-            font-size: map-get($fontSizeArray, for20px) /2;
-          }
+        .button, .pdf > .button{
+          padding: .5rem 1rem;
+          font-size: map-get($fontSizeArray, for20px) /2;
         }
       }
     }
