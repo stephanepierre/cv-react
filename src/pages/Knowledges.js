@@ -10,12 +10,12 @@ const knowledges = () => {
     <div className="knowledges">
       <Navigation />
       <motion.div 
-          className="knowledgesContent"        
+        className="knowledgesContent"        
         initial={{opacity:0}}
         animate={{opacity:1}}
         transition={{
           scale:1,
-          duration: 1.5
+          duration: 1
         }}
       >
         <Languages />

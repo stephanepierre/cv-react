@@ -13,7 +13,7 @@ const Experiences = () => {
         animate={{opacity:1}}
         transition={{
           scale:1,
-          duration: 1.5
+          duration: 1
         }}
       >
         <ExperiencesBlock />

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import IconPlus from '../../media/images/icons/icon-plus.png'
+import IconPlus from '../../media/images/icons/icon-plus.png';
+import {motion} from 'framer-motion';
 
 class Project extends Component {
   state = {
@@ -17,7 +18,14 @@ class Project extends Component {
     let {name, languagesIcons, source, info, picture} = this.props.item;
 
     return (
-      <div className="project">
+      <motion.div className="project"        
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{
+          scale:1,
+          duration: 1
+        }}
+      >
         <div className="icons">
           {languagesIcons.map(icon => 
             <img src={icon} key={icon} alt="imgIcons" className="imgIcons"></img>
@@ -33,7 +41,15 @@ class Project extends Component {
 {/* .............popUp............................ */}
         {
           this.state.showInfo && (
-            <div className="modal">
+            <motion.div 
+              className="modal"
+              initial={{opacity:0}}
+              animate={{opacity:1}}
+              transition={{
+                scale:1,
+                duration: 1
+              }}
+            >
               <div className="infosContent">
                 <div className="head">
                   <h2>{name}</h2>
@@ -44,14 +60,14 @@ class Project extends Component {
                 <p className="text">{info}</p>
                 <div className="buttonModal return" onClick={this.handleInfo}>Retourner sur la page</div>
               </div>
-            </div>
+            </motion.div>
 
           )
         }
 
 {/* ..................end popUp....................... */}
 
-      </div>
+      </motion.div>
     );
   }
 }
