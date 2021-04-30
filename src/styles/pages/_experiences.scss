@@ -7,38 +7,17 @@
   width: 100%;
 
   .experience{
-    margin-top: 1rem;
     display: grid;
-    grid-template-columns: 70% 1fr;
-    grid-template-rows: 36% 64%;
-    grid-template-areas: 
-    "E1 E2"
-    "E3 E4";
-    row-gap: .5rem;
-    column-gap: .5rem;
-
+    grid-template-columns: 30% 69%;
+    row-gap: .4rem;
+    column-gap: .4rem;
+    text-align: center;
     .dev, .sale, .driver, .army{
       border-radius: $borderRadius;
       border: 1px solid $secondColor;
       box-shadow: $shadow;
       padding: .5rem;
     }
-    .dev{
-      grid-area: E1;
-    }
-
-    .sale{
-      grid-area: E3;
-    }
-
-    .driver{
-      grid-area: E2;
-    }
-
-    .army{
-      grid-area: E4;
-    }
-
     .works > li{
       font-family: "charmBold";
       font-size: map-get($fontSizeArray, for13px);
@@ -68,15 +47,10 @@
   };
   @media screen and (max-width: 580px){
     .experience{
-      row-gap: 0;
-      column-gap: 0;  
       display: flex;
       flex-direction: column;
-      text-align: center;
       .dev, .sale, .driver, .army{
         align-self: center;
-        padding: .8rem;
-        margin: .5rem;
       }
       .works > li{
         font-size: map-get($fontSizeArray, for13px) /1.7;
