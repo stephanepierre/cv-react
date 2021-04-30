@@ -7,15 +7,6 @@
   width: 100%;
 
   .experience{
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 70% 1fr;
-    grid-template-rows: 36% 64%;
-    grid-template-areas: 
-    "E1 E2"
-    "E3 E4";
-    row-gap: .5rem;
-    column-gap: .5rem;
 
     .dev, .sale, .driver, .army{
       border-radius: $borderRadius;
