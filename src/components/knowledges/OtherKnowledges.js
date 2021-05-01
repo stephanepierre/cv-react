@@ -12,6 +12,7 @@ const OtherKnowledges = () => {
           <li>Pack office intermédiaire</li>
           <li>Méthodes agiles débutant</li>
           <li>Github</li>
+          <li>Permis: A, B, C</li>
         </ul>
       </div>
     </div>

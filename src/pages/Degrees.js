@@ -31,7 +31,12 @@ const Degrees = () => {
             y: 180,
             transition: { duration: 0.5 },
           }}
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ 
+            scale: 2.5,
+            x:100,
+            y: 100,
+            transition: { duration: 0.3 },
+          }}
         >
           <img src={CertificatJs1} alt="certificatJs1" />
         </motion.div>
@@ -44,7 +49,11 @@ const Degrees = () => {
             y: 180,
             transition: { duration: 0.5 },
           }}
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ 
+            scale: 2.5,
+            y: 100,
+            transition: { duration: 0.3 },
+          }}
         >
           <img src={CertificatJs2} alt ="certificatJs2" />
         </motion.div>
@@ -57,7 +66,12 @@ const Degrees = () => {
             y: 180,
             transition: { duration: 0.5 },
           }}
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ 
+            scale: 2.5,
+            x:-100,
+            y: 100,
+            transition: { duration: 0.3 },
+          }}
         >
           <img src={CertificatSass} alt="certificatSass" />
         </motion.div>
@@ -69,7 +83,11 @@ const Degrees = () => {
             x:300,
             transition: { duration: 0.5 },
           }}
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ 
+            scale: 2.5,
+            x:100,
+            transition: { duration: 0.3 },
+          }}
         >
           <img src={AideDresseur} alt="aideDresseur" />
         </motion.div>
@@ -80,7 +98,10 @@ const Degrees = () => {
             scale: 2.5,
             transition: { duration: 0.5 },
           }}
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ 
+            scale: 2.5,
+            transition: { duration: 0.3 },
+          }}
         >
           <img src={Bts} alt="bts" />
         </motion.div>
@@ -92,7 +113,11 @@ const Degrees = () => {
             x:-300,
             transition: { duration: 0.5 },
           }}
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ 
+            scale: 2.5,
+            x:-100,
+            transition: { duration: 0.3 },             
+          }}
         >
           <img src={Cap} alt="cap" />
         </motion.div>
@@ -105,7 +130,12 @@ const Degrees = () => {
             y: -200,
             transition: { duration: 0.5 },
           }}
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ 
+            scale: 2,
+            x:100,
+            y: -100,
+            transition: { duration: 0.3 },
+          }}
         >
           <img src={DogDriver} alt="dogdriver" />
         </motion.div>
@@ -117,7 +147,11 @@ const Degrees = () => {
             y: -200,
             transition: { duration: 0.5 },
           }}
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ 
+            scale: 2.5,
+            y: -100,
+            transition: { duration: 0.3 },
+          }} 
         >
           <img src={Pl} alt="pl" />
         </motion.div>

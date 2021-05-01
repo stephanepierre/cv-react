@@ -66,9 +66,9 @@ const Hobbies = () => {
         <li className="hobbiesList__interest">
           <img src={ OtherInterest } alt="otherInterest" />
           <h6>Encore?</h6>
-          <div className="text">De nombreuses autres activités me 
-          plaisent, le tennis, l'équitation, le badmington, les restaurants...en fait trop de choses 
-          pour être répertoriées ici. A vous de les découvrir. </div>
+          <div className="text">De nombreuses autres activités me plaisent, le tennis, l'équitation, 
+          le badmington, les restaurants...en fait trop de choses pour être répertoriées ici. A vous 
+          de les découvrir. </div>
         </li>
       </ul>
     </div>
