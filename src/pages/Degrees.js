@@ -45,7 +45,6 @@ const Degrees = () => {
           className="degree"
           whileHover={{
             scale: 2.5,
-            x:0,
             y: 180,
             transition: { duration: 0.5 },
           }}

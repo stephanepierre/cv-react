@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilPic from '../media/images/photo-cv4.jpg'
+import ProfilPic from '../media/images/photo-cv4-blue.jpg'
 import { NavLink } from 'react-router-dom';
 import IconHome from '../media/images/icons/icon-accueil.png'; 
 import IconContact from '../media/images/icons/icon-contact.png';
