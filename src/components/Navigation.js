@@ -15,7 +15,7 @@ const Navigation = () => {
     <div className="sidebar">
       <div className="id">
         <div className="idContent">
-          <img src={ ProfilPic } alt="profil-pic"></img>
+          <img src={ ProfilPic } alt="stephane-developpeur-web"></img>
           <h3>Stéphane <br/> PIERRE</h3>
         </div>
       </div>
@@ -70,12 +70,12 @@ const Navigation = () => {
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/stephane-pierre-a899501b7" target="_blank" rel="noopener noreferrer">
-              <img src={ IconLinkedIn } alt="icon-linkedIn" />
+              <img src={ IconLinkedIn } alt="stephane-linkedIn" />
             </a>
           </li>
           <li>
             <a href="https://github.com/stephanepierre?tab=repositories" target="_blank" rel="noopener noreferrer">
-              <img src={ IconGithub } alt="icon-github" />
+              <img src={ IconGithub } alt="stephane-github" />
             </a>
           </li>
         </ul>

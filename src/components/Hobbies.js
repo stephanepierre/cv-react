@@ -16,7 +16,7 @@ const Hobbies = () => {
       <h3>Mes loisirs</h3>
       <ul className="hobbiesList">
         <li className="hobbiesList__interest">
-          <img src={ Hand } alt="hand" />
+          <img src={ Hand } alt="handball" />
           <h6>Le handball:</h6>
           <div className="text">Un esprit de camaraderie sur le terrain, un soutien sans faille en défense, une bonne 
           coordination en attaque, gérer son stress, se surpasser pour soi-même et pour l'équipe.</div>
@@ -28,7 +28,7 @@ const Hobbies = () => {
           le tard", vers mes 30ans, mais j'aime beaucoup ce sport.</div>
         </li>
         <li className="hobbiesList__interest">
-          <img src={ Book } alt="book" />
+          <img src={ Book } alt="lecture" />
           <h6>La lecture:</h6>
           <div className="text">Plus calme, reposant, pour m'évader, je lis énormément de science-fiction fantasy et quelques policiers. 
           Aide à la concentration.</div>

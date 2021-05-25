@@ -38,7 +38,7 @@ const Degrees = () => {
             transition: { duration: 0.3 },
           }}
         >
-          <img src={CertificatJs1} alt="certificatJs1" />
+          <img src={CertificatJs1} alt="certificat-javascript-1" />
         </motion.div>
 
         <motion.div 
@@ -54,7 +54,7 @@ const Degrees = () => {
             transition: { duration: 0.3 },
           }}
         >
-          <img src={CertificatJs2} alt ="certificatJs2" />
+          <img src={CertificatJs2} alt ="certificat-javascript-2" />
         </motion.div>
 
         <motion.div 
@@ -72,7 +72,7 @@ const Degrees = () => {
             transition: { duration: 0.3 },
           }}
         >
-          <img src={CertificatSass} alt="certificatSass" />
+          <img src={CertificatSass} alt="certificat-Sass" />
         </motion.div>
 
         <motion.div 
@@ -88,7 +88,7 @@ const Degrees = () => {
             transition: { duration: 0.3 },
           }}
         >
-          <img src={AideDresseur} alt="aideDresseur" />
+          <img src={AideDresseur} alt="aide Dresseur" />
         </motion.div>
 
         <motion.div 
@@ -102,7 +102,7 @@ const Degrees = () => {
             transition: { duration: 0.3 },
           }}
         >
-          <img src={Bts} alt="bts" />
+          <img src={Bts} alt="bts force de vente" />
         </motion.div>
 
         <motion.div 
@@ -118,7 +118,7 @@ const Degrees = () => {
             transition: { duration: 0.3 },             
           }}
         >
-          <img src={Cap} alt="cap" />
+          <img src={Cap} alt="cap ebeniste" />
         </motion.div>
 
         <motion.div 
@@ -136,7 +136,7 @@ const Degrees = () => {
             transition: { duration: 0.3 },
           }}
         >
-          <img src={DogDriver} alt="dogdriver" />
+          <img src={DogDriver} alt="maitre de chien" />
         </motion.div>
 
         <motion.div 
@@ -152,7 +152,7 @@ const Degrees = () => {
             transition: { duration: 0.3 },
           }} 
         >
-          <img src={Pl} alt="pl" />
+          <img src={Pl} alt="chauffeur pl" />
         </motion.div>
 
       </motion.div>

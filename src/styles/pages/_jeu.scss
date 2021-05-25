@@ -1,0 +1,26 @@
+.jeuContent{
+  width: 500px;
+  height: 500px;
+  border: $border;
+  border-radius: $borderRadius;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+
+}
+
+@media screen and(max-width: 850px) {
+  .jeuContent{
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and(max-width: 580px) {
+  .jeuContent{
+    width: 250px;
+    height: 250px;
+  }
+}

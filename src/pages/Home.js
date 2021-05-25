@@ -19,16 +19,25 @@ const home = () => {
         <div className="content">
           <h1>Stéphane PIERRE</h1>
           <h2>Développeur Full-stack</h2>
+
           <div className="pdf">
             <a href={ Cv } target="_blank" rel="noreferrer noopener" className="button">
               Voir le CV "original"
             </a>
           </div>
+
           <div>
             <NavLink exact to="/degrees" activeClassName="active">
               <div className="button">Voir les diplômes</div>
             </NavLink>
           </div>
+          
+          {/* <div>
+            <NavLink exact to="/jeu" activeClassName="active">
+              <div className="button">Faire un jeu</div>
+            </NavLink>
+          </div> */}
+
         </div>
       </motion.div>
     </div>

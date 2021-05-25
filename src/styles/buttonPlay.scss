@@ -1,0 +1,32 @@
+.buttonPlay{
+  padding: 10px;
+  .button1,
+  .button2,
+  .button3,
+  .button4{
+    border-radius: $borderRadius;
+    background: rgb(247,251,63);
+    background: -moz-radial-gradient(circle, rgba(247,251,63,1) 0%, rgba(129,252,70,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(247,251,63,1) 0%, rgba(129,252,70,1) 100%);
+    background: radial-gradient(circle, rgba(247,251,63,1) 0%, rgba(129,252,70,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7fb3f",endColorstr="#81fc46",GradientType=1);  
+    transition: linear 2s;
+  
+    &:hover{
+      background: rgb(129,252,70);
+      background: -moz-radial-gradient(circle, rgba(129,252,70,1) 0%, rgba(247,251,63,1) 100%);
+      background: -webkit-radial-gradient(circle, rgba(129,252,70,1) 0%, rgba(247,251,63,1) 100%);
+      background: radial-gradient(circle, rgba(129,252,70,1) 0%, rgba(247,251,63,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#81fc46",endColorstr="#f7fb3f",GradientType=1);
+    }
+    
+    &:active{
+      background: rgb(129,252,70);
+      background: -moz-radial-gradient(circle, rgba(129,252,70,1) 0%, rgba(247,251,63,1) 100%);
+      background: -webkit-radial-gradient(circle, rgba(129,252,70,1) 0%, rgba(247,251,63,1) 100%);
+      background: radial-gradient(circle, rgba(129,252,70,1) 0%, rgba(247,251,63,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#81fc46",endColorstr="#f7fb3f",GradientType=1);
+    }
+  }
+}
+

@@ -224,7 +224,8 @@ a:visited, h1, h2, h3, h4, h5, h6, h7{
 .contact, 
 .experiences, 
 .hobbies,
-.degrees{
+.degrees,
+.jeu{
   display: flex;
 
   @media screen and (max-width: 850px){
