@@ -1,35 +1,68 @@
 .hobbiesContent{
   min-height: $minHeight;
-  background: $firstColor;
   border-radius: $borderRadius;
-  padding: .8rem;
   overflow: hidden;
   width: 100%;
 
-  h3{
-    text-align: center;
-    font-family: "franckMedium";
-  }
-
   .hobbiesList{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Hand Volley"
+    "Book Films"
+    "Web Travels"
+    "Musique Moto"
+    "Other Other";
     column-gap: .3rem;
     row-gap: .3rem;
-    @media screen and (max-width: 580px){
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;  
-    };
+
+    .hand{
+      grid-area: Hand;
+    }
+    .volley{
+      grid-area: Volley;
+    }
+    .book{
+      grid-area: Book;
+    }
+    .films{
+      grid-area: Films;
+    }
+    .web{
+      grid-area: Web;
+    }
+    .travels{
+      grid-area: Travels;
+    }
+    .musique{
+      grid-area: Musique;
+    }
+    .moto{
+      grid-area: Moto;
+    }
+    .otherInterest{
+      grid-area: Other;
+    }
 
 
     &__interest{
+      background: $firstColor;
       border-radius: $borderRadius;
-      border: 1px solid $secondColor;
-      box-shadow: $shadow;
-      padding: .4rem;
-
+      padding: .7rem;
+      display: grid;
+      grid-template-areas: 
+      "Img H"
+      "Text Text";
+      grid-template-columns: 70px 1fr;
+      grid-template-rows: 70px 1fr;
+      img{
+        grid-area: Img;
+      }
+      h6{
+        grid-area: H;
+        align-self: center;
+      }
       .text{
+        grid-area: Text;
         font-size: map-get($fontSizeArray, for11px);
 
         @media screen and (max-width: 1030px){

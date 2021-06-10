@@ -1,6 +1,5 @@
 .experiencesContent{
   min-height: $minHeight;
-  background: $firstColor;
   border-radius: $borderRadius;
   padding: .5rem;
   overflow: hidden;
@@ -8,14 +7,18 @@
 
   .experience{
     display: grid;
-    grid-template-columns: 30% 69%;
+    height: auto;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1fr 40%;
     row-gap: .4rem;
     column-gap: .4rem;
     text-align: center;
+    
     .dev, .sale, .driver, .army{
+      background: $firstColor;
       border-radius: $borderRadius;
-      border: 1px solid $secondColor;
-      box-shadow: $shadow;
+      //border: 1px solid $secondColor;
+      //box-shadow: $shadow;
       padding: .5rem;
     }
     .works > li{
