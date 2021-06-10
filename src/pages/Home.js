@@ -26,7 +26,7 @@ const home = () => {
             </a>
           </div>
 
-          <div>
+          <div className="degrees">
             <NavLink exact to="/degrees" activeClassName="active">
               <div className="button">Voir les diplômes</div>
             </NavLink>
