@@ -24,6 +24,20 @@
     text-transform: uppercase;
     font-family: "franckMedium";
   }
+  h4 {
+    font-size: 1.7rem;
+  }
+  @media screen and(max-width: 850px) {
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and(max-width: 580px) {
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+
 
 //................................................................................................
 //..............................Language page.....................................................
@@ -32,6 +46,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    // .frameworksDisplay, .languagesDisplay{
+    //   h4 {
+    //     font-size: 1.7rem;
+    //   }
+    // }
     .frameworksDisplay{
       margin-bottom: .5rem;
     }
@@ -53,7 +73,7 @@
         &:nth-child(2)::before, &:nth-child(3)::before{
           content: "";
           position: absolute;
-          height: 195px;
+          height: 170px;
           width: 1px;
           background: $white;
           transform: translate(9px, 19px);
@@ -65,7 +85,7 @@
         span{
           width: 36%;
           &:nth-child(2)::before, &:nth-child(3)::before{
-            height: 150px;
+            height: 165px;
           }
         }
       }
@@ -73,9 +93,9 @@
 
     .languagesList{
       padding-top: .5rem;
-
+      
       .progressBar{
-        height: .4rem;
+        height: .2rem;
         background: transparent;
         border-radius: 50px;
         margin-top: .2rem;
@@ -85,7 +105,7 @@
           content: "";
           background: $secondColor;
           border-radius: 50px;
-          height: .4rem;
+          height: .3rem;
           position: absolute;
           width: 0%;
           animation: line 1.5s ease-out forwards; // here I make the animation of the progress bar
@@ -97,6 +117,34 @@
           }
         }
       }
+    }
+  }
+  @media screen and(max-width: 580px) {
+    .languagesFrameworks{
+      .frameworksDisplay{
+        margin-bottom: .3rem;
+        .months{
+          font-size: .5rem;
+          span{
+            &:nth-child(2)::before, &:nth-child(3)::before{
+              height: 145px;
+            }
+          }
+        }
+      }
+      .languagesDisplay{
+        .months{
+          font-size: .5rem;
+          span{
+            &:nth-child(2)::before, &:nth-child(3)::before{
+              height: 155px;
+            }
+          }  
+        }
+      }
+    }
+    .languagesList{
+      font-size: .7rem;
     }
   }
 //...............................end of language page .............................................
@@ -123,17 +171,31 @@
       grid-area: D;
 
       &__list{
-        display: flex;
-        flex-wrap: nowrap;
-        margin-bottom: 1rem;
+        // display: flex;
+        // flex-wrap: nowrap;
+        display: grid;
+        grid-template-areas: "Icon Title Text";
+        grid-template-columns: 1fr 20% 70%;
+        margin-bottom: .7rem;
         align-items: center;
+        width: 100%;
+        height: auto;
         img{
-          margin-right: .3rem;
+          grid-area: Icon;
         }
         h6{
-          margin-right: 1rem;
+          font-size: 1rem;
+          grid-area: Title;
+          margin-right: 0.2rem;
+        }
+        @media screen and(max-width:580px) {
+          h6{
+            font-size: .7rem;
+          }
         }
         .text{
+          grid-area: Text;
+          font-size: .9rem;
           @media screen and (max-width: 850px) {
             font-size: .8rem;
           }
