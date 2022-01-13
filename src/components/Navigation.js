@@ -80,7 +80,7 @@ const Navigation = () => {
           </li>
         </ul>
         <div className="signature">
-          <p>&#169; Stéphane Pierre - 2021</p>
+          <p>&#169; Stéphane Pierre - 2022</p>
         </div>
       </div>
     </div>
